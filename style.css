@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #141e30, #243b55);
+
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.stopwatch-container {
+  width: 90%;
+  max-width: 500px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+.time-display {
+  font-size: 45px;
+  font-weight: bold;
+
+  margin-bottom: 30px;
+
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 22px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+#startBtn {
+  background: #22c55e;
+  color: white;
+}
+
+#pauseBtn {
+  background: #f59e0b;
+  color: white;
+}
+
+#lapBtn {
+  background: #3b82f6;
+  color: white;
+}
+
+#resetBtn {
+  background: #ef4444;
+  color: white;
+}
+
+.laps-container {
+  margin-top: 35px;
+}
+
+.laps-container h2 {
+  margin-bottom: 15px;
+}
+
+#lapList {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#lapList li {
+  padding: 10px;
+  margin: 6px 0;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border-radius: 8px;
+}
